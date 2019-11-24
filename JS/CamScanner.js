@@ -2,6 +2,7 @@
  * @supported 2ABDBE39B3FF
  */
 
+
 /*
 CamScanner unlocks pro, Cloud scanning is not available.
 

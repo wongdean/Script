@@ -55,7 +55,6 @@ def modify_conf(conf, file_path, url_perfix, support):
         contents = contents[3:]
 
     with open(conf, 'w', encoding='utf-8') as f:
-        f.write(support)
         for line in contents:
             f.write(line)
 
