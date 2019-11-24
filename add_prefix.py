@@ -65,6 +65,6 @@ if __name__ == '__main__':
     URL_PREFIX = "https://raw.githubusercontent.com/wongdean/Script/master/JS/"
     PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
     FILE_PATH = os.path.join(PROJECT_ROOT, 'JS')
-    modify_conf(os.path.join(PROJECT_ROOT, 'QuantumultX/js_noby.conf'),
+    modify_conf(os.path.join(PROJECT_ROOT, 'QuantumultX/Js.conf'),
                 FILE_PATH, URL_PREFIX, SUPPORT)
     modify_file([os.path.join(PROJECT_ROOT, 'JS')], SUPPORT)

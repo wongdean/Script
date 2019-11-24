@@ -4,6 +4,7 @@
 
 
 
+
 let body = $response.body
 body=JSON.parse(body)
 body['data']['relates'].forEach((element, index)=> {
