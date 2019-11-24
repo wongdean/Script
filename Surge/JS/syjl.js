@@ -1,3 +1,6 @@
+/**
+ * @supported 2ABDBE39B3FF
+ */
 /*
 Watermark sprite vip （Author: Alex0510）
 Surge4：

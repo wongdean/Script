@@ -1,3 +1,6 @@
+/**
+ * @supported 2ABDBE39B3FF
+ */
 /*
 Baidu netdisc unlocks online video play speed.
 

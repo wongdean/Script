@@ -1,3 +1,6 @@
+/**
+ * @supported 2ABDBE39B3FF
+ */
 /*
 Gyroscope unlock pro (Script author: @Maasea )
 Surge:

@@ -1,3 +1,6 @@
+/**
+ * @supported 2ABDBE39B3FF
+ */
 /*
 KuWo music unlock lossless download, need to use with KuWo music VIP script.
 

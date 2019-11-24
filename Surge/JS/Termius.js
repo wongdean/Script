@@ -1,3 +1,6 @@
+/**
+ * @supported 2ABDBE39B3FF
+ */
 /*
 Termius unlocks local pro v 
 (From the author @Maasea)

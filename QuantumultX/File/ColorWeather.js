@@ -1,3 +1,6 @@
+/**
+ * @supported 2ABDBE39B3FF
+ */
 /*
 CaiYun Weather (ColorWeather) unlock Vip
 
