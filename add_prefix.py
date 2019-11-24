@@ -60,7 +60,7 @@ def modify_conf(conf, file_path, url_perfix, support):
 
 
 if __name__ == '__main__':
-    SUPPORT = "/**\n * @supported 2ABDBE39B3FF\n */\n\n"
+    SUPPORT = "/**\n * @supported 2ABDBE39B3FF 8BCC0A25D731\n */\n\n"
     URL_PREFIX = "https://raw.githubusercontent.com/wongdean/Script/master/JS/"
     PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
     FILE_PATH = os.path.join(PROJECT_ROOT, 'JS')
