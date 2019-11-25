@@ -7,8 +7,16 @@ def add_prefix(file, prefix):
     with open(file, 'r', encoding='utf-8') as f:
         contents += f.readlines()
 
-    if '/**' in contents[0] and ' */' in contents[2]:
-        contents = contents[3:]
+    if '/**' in contents[0]:
+        for i in range(1, len(contents)):
+            if ' */' in contents[i]:
+                continue
+        while i < len(contents):
+            if contents[i] == '\n':
+                i += 1
+            else:
+                break
+        contents = contents[i:]
 
     with open(file, 'w', encoding='utf-8') as f:
         f.write(prefix)
@@ -31,6 +39,12 @@ def modify_file(paths, prefix):
 def modify_conf(conf, file_path, url_perfix, support):
     raw = []
     contents = []
+    r = requests.get(
+        'https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Js.conf')
+
+    with open(conf, 'wb') as f:
+        f.write(r.content)
+
     with open(conf, 'r', encoding='utf-8') as f:
         raw += f.readlines()
 

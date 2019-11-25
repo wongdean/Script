@@ -2,8 +2,6 @@
  * @supported 2ABDBE39B3FF 8BCC0A25D731
  */
 
-
-
 /*
 TickTick (Tick list) unlock pro
 QX:

@@ -2,8 +2,6 @@
  * @supported 2ABDBE39B3FF 8BCC0A25D731
  */
 
-
-
 /*
 看漫画极速版 unlock vip, currently off the shelf
 

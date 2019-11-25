@@ -2,8 +2,6 @@
  * @supported 2ABDBE39B3FF 8BCC0A25D731
  */
 
-
-
 /*
 bilibili home page module customization whitelist. by onewayticket255
 

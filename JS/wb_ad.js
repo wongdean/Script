@@ -2,8 +2,6 @@
  * @supported 2ABDBE39B3FF 8BCC0A25D731
  */
 
-
-
 /*
 README：https://github.com/yichahucha/surge/tree/master
 @supported A9DA732136CB
