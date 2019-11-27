@@ -2,29 +2,43 @@ import os
 import requests
 
 
+# 给每个 js 文件开头加注释
 def add_prefix(file, prefix):
     contents = []
     with open(file, 'r', encoding='utf-8') as f:
         contents += f.readlines()
 
-    if '/**' in contents[0]:
-        for i in range(1, len(contents)):
-            if ' */' in contents[i]:
-                continue
+    i = 0
+    # 删除前面的空行
+    while i < len(contents):
+        if contents[i] == '\n':
+            i += 1
+        else:
+            break
+
+    if '/**' in contents[i]:
+        # 如果存在注释，则删除前面注释的内容
+        while i < len(contents):
+            if ' */' in contents[j]:
+                break
+            i += 1
+
+        # 删除注释后一段的空行
         while i < len(contents):
             if contents[i] == '\n':
                 i += 1
             else:
                 break
-        contents = contents[i:]
+
+    contents = contents[i:]
 
     with open(file, 'w', encoding='utf-8') as f:
         f.write(prefix)
         for line in contents:
             f.write(line)
-    # print(contents)
 
 
+# 批量修改 paths 里面的文件
 def modify_file(paths, prefix):
     for path in paths:
         files = os.listdir(path)
@@ -36,6 +50,7 @@ def modify_file(paths, prefix):
                 add_prefix(path + '/' + file, prefix)
 
 
+# 读取订阅的 conf 文件，修改本地的 conf 文件
 def modify_conf(conf, file_path, url_perfix, support):
     raw = []
     contents = []
@@ -65,16 +80,13 @@ def modify_conf(conf, file_path, url_perfix, support):
         temp = ' '.join(items)
         contents.append(temp)
 
-    if '/**' in contents[0] and ' */' in contents[2]:
-        contents = contents[3:]
-
     with open(conf, 'w', encoding='utf-8') as f:
         for line in contents:
             f.write(line)
 
 
 if __name__ == '__main__':
-    SUPPORT = "/**\n * @supported 2ABDBE39B3FF 8BCC0A25D731\n */\n\n"
+    SUPPORT = "/**\n * @supported 2ABDBE39B3FF 8BCC0A25D731 E3CA0C025E9B\n */\n\n"
     URL_PREFIX = "https://raw.githubusercontent.com/wongdean/Script/master/JS/"
     PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
     FILE_PATH = os.path.join(PROJECT_ROOT, 'JS')

@@ -1,5 +1,5 @@
 /**
- * @supported 2ABDBE39B3FF 8BCC0A25D731
+ * @supported 2ABDBE39B3FF 8BCC0A25D731 E3CA0C025E9B
  */
 
 let obj = JSON.parse($response.body);
