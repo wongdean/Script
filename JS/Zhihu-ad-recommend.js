@@ -2,7 +2,11 @@
  * @supported 2ABDBE39B3FF 8BCC0A25D731 E3CA0C025E9B
  */
 
- */
+/*
+Remove Zhihu ads
+
+Regex: ^https://api.zhihu.com/topstory/recommend
+*/
 
 let body = $response.body
 body=JSON.parse(body)
@@ -13,3 +17,5 @@ body['data'].forEach((element, index)=> {
 })
 body=JSON.stringify(body)
 $done({body})
+
+// by onewayticket255

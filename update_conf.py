@@ -19,7 +19,7 @@ def add_prefix(file, prefix):
     if '/**' in contents[i]:
         # 如果存在注释，则删除前面注释的内容
         while i < len(contents):
-            if ' */' in contents[j]:
+            if ' */' in contents[i]:
                 break
             i += 1
 
