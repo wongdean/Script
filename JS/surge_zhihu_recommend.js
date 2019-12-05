@@ -6,6 +6,8 @@
 
  */
 
+ */
+
 let body = $response.body
 body=JSON.parse(body)
 body['data'].forEach((element, index)=> {
