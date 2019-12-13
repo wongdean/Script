@@ -129,7 +129,7 @@ def edit_local(js_path, local_conf):
     with open(local_conf, 'w', encoding='utf-8') as f:
         for line in contents:
             f.write(line)
-    print('OK!')
+    print('remote file updated! Please sync it to Github')
 
 # 由 js_conf 修改配置文件
 
@@ -167,7 +167,7 @@ def edit_conf(js_conf, conf):
         for line in contents:
             f.write(line)
 
-    print('overwrite the conf')
+    print('overwrite the conf in iCloud')
 
 
 if __name__ == '__main__':
