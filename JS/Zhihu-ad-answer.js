@@ -1,5 +1,5 @@
 /**
- * @supported 2ABDBE39B3FF 8BCC0A25D731 E3CA0C025E9B
+ * @supported B81E36B28461 8BCC0A25D731
  */
 
 //regex: ^https://api.zhihu.com/.*/questions
