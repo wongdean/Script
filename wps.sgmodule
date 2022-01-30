@@ -7,4 +7,3 @@ Wps = type=http-response,requires-body=1,max-size=-1,pattern=^https?:\/\/account
 
 [MITM]
 hostname = %INSERT% account.wps.cn
-
